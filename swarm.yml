@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  app:
+    image: mi-aplicacion-dolar
+    volumes:
+      - /ruta/local:/usr/src/app
