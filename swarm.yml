@@ -1,7 +1,14 @@
-version: '3.7'
+version: '3.8'
 
 services:
   app:
-    image: mi-aplicacion-dolar
+    image: dolar-blue
+    deploy:
+      replicas: 7
+    ports:
+      - "8080:3000"
     volumes:
-      - /ruta/local:/usr/src/app
+      - D:\Examen de Microservicio\app:/src/aplicacion/app
+
+
+

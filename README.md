@@ -12,14 +12,20 @@ Este proyecto es una aplicación web que consume una API para proporcionar el va
 ### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/mi-aplicacion-dolar.git
+git clone https://github.com/Leandromarcato/Parcial_Microservicio.git
 
-cd mi-aplicacion-dolar
+cd Examen de Microservicio
 
 npm i para intalar las dependencia necesaria
 
 npm node app.js
 
-docker build -t mi-aplicacion-dolar . 
+http://localhost:8080/dolar para ver los datos
+
+docker build -t dolar-blue .  // creamos la imagen del dockerfile
+
+docker swarm leave --force  // cerramos todos los clouster
+
+docker swarm init         // iniaciamos un nuevo clouster
 
 docker stack deploy -c swarm.yml mi-stack
